@@ -9,12 +9,15 @@ class Makefail < Formula
 
   option 'with-install-debug', "Turns on debug output for `make install`"
   option 'with-install-verbose', "Turns on verbose output for `make install`"
+  option "with-fix", "Potential fix"
 
   def install
     # Install dependencies.
     system *%W[cpanm --quiet --notest --local-lib-contained tryit List::MoreUtils::XS Exporter::Tiny]
 
-    if build.with? "install-debug"
+    if build.with? "fix"
+      system *%W[cpanm --verbose --notest --local-lib-contained tryit --install-args MAKEFLAGS= List::MoreUtils]
+    elsif build.with? "install-debug"
       # Enable debugging output for `make install`. Build will appear successful
       # (if empty), but log will have have full debugging output.
       system *%W[cpanm --verbose --notest --local-lib-contained tryit --install-args -d List::MoreUtils]
