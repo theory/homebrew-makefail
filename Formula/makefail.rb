@@ -22,6 +22,7 @@ class Makefail < Formula
       # (if empty), but log will have have full debugging output.
       system *%W[cpanm --verbose --notest --local-lib-contained tryit --install-args -d List::MoreUtils]
     elsif build.with? "install-verbose"
+      # Enable echoing commands and ExtUtils::Install verbosity.
       system *%W[cpanm --verbose --notest --local-lib-contained tryit --install-args], 'NOECHO="" VERBINST=1', "List::MoreUtils"
     else
       # No debugging, build will fail becuause List::MoreUtils will not be installed.
