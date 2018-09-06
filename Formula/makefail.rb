@@ -9,7 +9,7 @@ class Makefail < Formula
 
   option 'with-install-debug', "Turns on debug output for `make install`"
   option 'with-install-verbose', "Turns on verbose output for `make install`"
-  option "with-fix", "Potential fix"
+  option "with-fix", "Tweak environment to fix the bug"
 
   def install
     # Install dependencies.
