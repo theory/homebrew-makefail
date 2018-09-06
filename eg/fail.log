@@ -1,0 +1,311 @@
+2018-09-06 10:28:57 -0400
+
+cpanm
+--verbose
+--notest
+--local-lib-contained
+tryit
+--installdeps
+.
+
+cpanm (App::cpanminus) 1.7044 on perl 5.018002 built for darwin-thread-multi-2level
+Work directory is /private/tmp/makefail-20180906-25247-4rfpkj/tryme/.brew_home/.cpanm/work/1536244137.26020
+You have make /usr/local/Homebrew/Library/Homebrew/shims/mac/super/make
+You have LWP 6.05
+You have /usr/bin/tar: bsdtar 2.8.3 - libarchive 2.8.3
+You have /usr/bin/unzip
+Entering /private/tmp/makefail-20180906-25247-4rfpkj/tryme
+Checking if you have List::MoreUtils 0 ... No
+Searching List::MoreUtils (0) on cpanmetadb ...
+Unpacking List-MoreUtils-0.428.tar.gz
+--> Working on .
+Configuring /private/tmp/makefail-20180906-25247-4rfpkj/tryme ... OK
+==> Found dependencies: List::MoreUtils
+--> Working on List::MoreUtils
+Fetching http://www.cpan.org/authors/id/R/RE/REHSACK/List-MoreUtils-0.428.tar.gz ... OK
+x List-MoreUtils-0.428/
+x List-MoreUtils-0.428/ARTISTIC-1.0
+x List-MoreUtils-0.428/Changes
+x List-MoreUtils-0.428/GPL-1
+x List-MoreUtils-0.428/inc/
+x List-MoreUtils-0.428/lib/
+x List-MoreUtils-0.428/LICENSE
+x List-MoreUtils-0.428/Makefile.PL
+x List-MoreUtils-0.428/MANIFEST
+x List-MoreUtils-0.428/META.json
+x List-MoreUtils-0.428/META.yml
+x List-MoreUtils-0.428/README.md
+x List-MoreUtils-0.428/t/
+x List-MoreUtils-0.428/t/inline/
+x List-MoreUtils-0.428/t/lib/
+x List-MoreUtils-0.428/t/LICENSE
+x List-MoreUtils-0.428/t/pureperl/
+x List-MoreUtils-0.428/t/xs/
+x List-MoreUtils-0.428/t/xs/after.t
+x List-MoreUtils-0.428/t/xs/after_incl.t
+x List-MoreUtils-0.428/t/xs/all.t
+x List-MoreUtils-0.428/t/xs/all_u.t
+x List-MoreUtils-0.428/t/xs/any.t
+x List-MoreUtils-0.428/t/xs/any_u.t
+x List-MoreUtils-0.428/t/xs/apply.t
+x List-MoreUtils-0.428/t/xs/arrayify.t
+x List-MoreUtils-0.428/t/xs/before.t
+x List-MoreUtils-0.428/t/xs/before_incl.t
+x List-MoreUtils-0.428/t/xs/binsert.t
+x List-MoreUtils-0.428/t/xs/bremove.t
+x List-MoreUtils-0.428/t/xs/bsearch.t
+x List-MoreUtils-0.428/t/xs/bsearchidx.t
+x List-MoreUtils-0.428/t/xs/duplicates.t
+x List-MoreUtils-0.428/t/xs/each_array.t
+x List-MoreUtils-0.428/t/xs/equal_range.t
+x List-MoreUtils-0.428/t/xs/false.t
+x List-MoreUtils-0.428/t/xs/firstidx.t
+x List-MoreUtils-0.428/t/xs/firstres.t
+x List-MoreUtils-0.428/t/xs/firstval.t
+x List-MoreUtils-0.428/t/xs/frequency.t
+x List-MoreUtils-0.428/t/xs/Import.t
+x List-MoreUtils-0.428/t/xs/indexes.t
+x List-MoreUtils-0.428/t/xs/insert_after.t
+x List-MoreUtils-0.428/t/xs/insert_after_string.t
+x List-MoreUtils-0.428/t/xs/lastidx.t
+x List-MoreUtils-0.428/t/xs/lastres.t
+x List-MoreUtils-0.428/t/xs/lastval.t
+x List-MoreUtils-0.428/t/xs/listcmp.t
+x List-MoreUtils-0.428/t/xs/lower_bound.t
+x List-MoreUtils-0.428/t/xs/mesh.t
+x List-MoreUtils-0.428/t/xs/minmax.t
+x List-MoreUtils-0.428/t/xs/minmaxstr.t
+x List-MoreUtils-0.428/t/xs/mode.t
+x List-MoreUtils-0.428/t/xs/natatime.t
+x List-MoreUtils-0.428/t/xs/none.t
+x List-MoreUtils-0.428/t/xs/none_u.t
+x List-MoreUtils-0.428/t/xs/notall.t
+x List-MoreUtils-0.428/t/xs/notall_u.t
+x List-MoreUtils-0.428/t/xs/occurrences.t
+x List-MoreUtils-0.428/t/xs/one.t
+x List-MoreUtils-0.428/t/xs/one_u.t
+x List-MoreUtils-0.428/t/xs/onlyidx.t
+x List-MoreUtils-0.428/t/xs/onlyres.t
+x List-MoreUtils-0.428/t/xs/onlyval.t
+x List-MoreUtils-0.428/t/xs/pairwise.t
+x List-MoreUtils-0.428/t/xs/part.t
+x List-MoreUtils-0.428/t/xs/qsort.t
+x List-MoreUtils-0.428/t/xs/reduce_0.t
+x List-MoreUtils-0.428/t/xs/reduce_1.t
+x List-MoreUtils-0.428/t/xs/reduce_u.t
+x List-MoreUtils-0.428/t/xs/samples.t
+x List-MoreUtils-0.428/t/xs/singleton.t
+x List-MoreUtils-0.428/t/xs/true.t
+x List-MoreUtils-0.428/t/xs/uniq.t
+x List-MoreUtils-0.428/t/xs/upper_bound.t
+x List-MoreUtils-0.428/t/xs/XS.t
+x List-MoreUtils-0.428/t/xs/zip6.t
+x List-MoreUtils-0.428/t/pureperl/after.t
+x List-MoreUtils-0.428/t/pureperl/after_incl.t
+x List-MoreUtils-0.428/t/pureperl/all.t
+x List-MoreUtils-0.428/t/pureperl/all_u.t
+x List-MoreUtils-0.428/t/pureperl/any.t
+x List-MoreUtils-0.428/t/pureperl/any_u.t
+x List-MoreUtils-0.428/t/pureperl/apply.t
+x List-MoreUtils-0.428/t/pureperl/arrayify.t
+x List-MoreUtils-0.428/t/pureperl/before.t
+x List-MoreUtils-0.428/t/pureperl/before_incl.t
+x List-MoreUtils-0.428/t/pureperl/binsert.t
+x List-MoreUtils-0.428/t/pureperl/bremove.t
+x List-MoreUtils-0.428/t/pureperl/bsearch.t
+x List-MoreUtils-0.428/t/pureperl/bsearchidx.t
+x List-MoreUtils-0.428/t/pureperl/duplicates.t
+x List-MoreUtils-0.428/t/pureperl/each_array.t
+x List-MoreUtils-0.428/t/pureperl/equal_range.t
+x List-MoreUtils-0.428/t/pureperl/false.t
+x List-MoreUtils-0.428/t/pureperl/firstidx.t
+x List-MoreUtils-0.428/t/pureperl/firstres.t
+x List-MoreUtils-0.428/t/pureperl/firstval.t
+x List-MoreUtils-0.428/t/pureperl/frequency.t
+x List-MoreUtils-0.428/t/pureperl/Import.t
+x List-MoreUtils-0.428/t/pureperl/indexes.t
+x List-MoreUtils-0.428/t/pureperl/insert_after.t
+x List-MoreUtils-0.428/t/pureperl/insert_after_string.t
+x List-MoreUtils-0.428/t/pureperl/lastidx.t
+x List-MoreUtils-0.428/t/pureperl/lastres.t
+x List-MoreUtils-0.428/t/pureperl/lastval.t
+x List-MoreUtils-0.428/t/pureperl/listcmp.t
+x List-MoreUtils-0.428/t/pureperl/lower_bound.t
+x List-MoreUtils-0.428/t/pureperl/mesh.t
+x List-MoreUtils-0.428/t/pureperl/minmax.t
+x List-MoreUtils-0.428/t/pureperl/minmaxstr.t
+x List-MoreUtils-0.428/t/pureperl/mode.t
+x List-MoreUtils-0.428/t/pureperl/natatime.t
+x List-MoreUtils-0.428/t/pureperl/none.t
+x List-MoreUtils-0.428/t/pureperl/none_u.t
+x List-MoreUtils-0.428/t/pureperl/notall.t
+x List-MoreUtils-0.428/t/pureperl/notall_u.t
+x List-MoreUtils-0.428/t/pureperl/occurrences.t
+x List-MoreUtils-0.428/t/pureperl/one.t
+x List-MoreUtils-0.428/t/pureperl/one_u.t
+x List-MoreUtils-0.428/t/pureperl/onlyidx.t
+x List-MoreUtils-0.428/t/pureperl/onlyres.t
+x List-MoreUtils-0.428/t/pureperl/onlyval.t
+x List-MoreUtils-0.428/t/pureperl/pairwise.t
+x List-MoreUtils-0.428/t/pureperl/part.t
+x List-MoreUtils-0.428/t/pureperl/qsort.t
+x List-MoreUtils-0.428/t/pureperl/reduce_0.t
+x List-MoreUtils-0.428/t/pureperl/reduce_1.t
+x List-MoreUtils-0.428/t/pureperl/reduce_u.t
+x List-MoreUtils-0.428/t/pureperl/samples.t
+x List-MoreUtils-0.428/t/pureperl/singleton.t
+x List-MoreUtils-0.428/t/pureperl/true.t
+x List-MoreUtils-0.428/t/pureperl/uniq.t
+x List-MoreUtils-0.428/t/pureperl/upper_bound.t
+x List-MoreUtils-0.428/t/pureperl/XS.t
+x List-MoreUtils-0.428/t/pureperl/zip6.t
+x List-MoreUtils-0.428/t/lib/Test/
+x List-MoreUtils-0.428/t/lib/Test/LMU.pm
+x List-MoreUtils-0.428/t/inline/after.pm
+x List-MoreUtils-0.428/t/inline/after_incl.pm
+x List-MoreUtils-0.428/t/inline/all.pm
+x List-MoreUtils-0.428/t/inline/all_u.pm
+x List-MoreUtils-0.428/t/inline/any.pm
+x List-MoreUtils-0.428/t/inline/any_u.pm
+x List-MoreUtils-0.428/t/inline/apply.pm
+x List-MoreUtils-0.428/t/inline/arrayify.pm
+x List-MoreUtils-0.428/t/inline/before.pm
+x List-MoreUtils-0.428/t/inline/before_incl.pm
+x List-MoreUtils-0.428/t/inline/binsert.pm
+x List-MoreUtils-0.428/t/inline/bremove.pm
+x List-MoreUtils-0.428/t/inline/bsearch.pm
+x List-MoreUtils-0.428/t/inline/bsearchidx.pm
+x List-MoreUtils-0.428/t/inline/duplicates.pm
+x List-MoreUtils-0.428/t/inline/each_array.pm
+x List-MoreUtils-0.428/t/inline/equal_range.pm
+x List-MoreUtils-0.428/t/inline/false.pm
+x List-MoreUtils-0.428/t/inline/firstidx.pm
+x List-MoreUtils-0.428/t/inline/firstres.pm
+x List-MoreUtils-0.428/t/inline/firstval.pm
+x List-MoreUtils-0.428/t/inline/frequency.pm
+x List-MoreUtils-0.428/t/inline/Import.pm
+x List-MoreUtils-0.428/t/inline/indexes.pm
+x List-MoreUtils-0.428/t/inline/insert_after.pm
+x List-MoreUtils-0.428/t/inline/insert_after_string.pm
+x List-MoreUtils-0.428/t/inline/lastidx.pm
+x List-MoreUtils-0.428/t/inline/lastres.pm
+x List-MoreUtils-0.428/t/inline/lastval.pm
+x List-MoreUtils-0.428/t/inline/listcmp.pm
+x List-MoreUtils-0.428/t/inline/lower_bound.pm
+x List-MoreUtils-0.428/t/inline/mesh.pm
+x List-MoreUtils-0.428/t/inline/minmax.pm
+x List-MoreUtils-0.428/t/inline/minmaxstr.pm
+x List-MoreUtils-0.428/t/inline/mode.pm
+x List-MoreUtils-0.428/t/inline/natatime.pm
+x List-MoreUtils-0.428/t/inline/none.pm
+x List-MoreUtils-0.428/t/inline/none_u.pm
+x List-MoreUtils-0.428/t/inline/notall.pm
+x List-MoreUtils-0.428/t/inline/notall_u.pm
+x List-MoreUtils-0.428/t/inline/occurrences.pm
+x List-MoreUtils-0.428/t/inline/one.pm
+x List-MoreUtils-0.428/t/inline/one_u.pm
+x List-MoreUtils-0.428/t/inline/onlyidx.pm
+x List-MoreUtils-0.428/t/inline/onlyres.pm
+x List-MoreUtils-0.428/t/inline/onlyval.pm
+x List-MoreUtils-0.428/t/inline/pairwise.pm
+x List-MoreUtils-0.428/t/inline/part.pm
+x List-MoreUtils-0.428/t/inline/qsort.pm
+x List-MoreUtils-0.428/t/inline/reduce_0.pm
+x List-MoreUtils-0.428/t/inline/reduce_1.pm
+x List-MoreUtils-0.428/t/inline/reduce_u.pm
+x List-MoreUtils-0.428/t/inline/samples.pm
+x List-MoreUtils-0.428/t/inline/singleton.pm
+x List-MoreUtils-0.428/t/inline/true.pm
+x List-MoreUtils-0.428/t/inline/uniq.pm
+x List-MoreUtils-0.428/t/inline/upper_bound.pm
+x List-MoreUtils-0.428/t/inline/XS.pm
+x List-MoreUtils-0.428/t/inline/zip6.pm
+x List-MoreUtils-0.428/lib/List/
+x List-MoreUtils-0.428/lib/List/MoreUtils/
+x List-MoreUtils-0.428/lib/List/MoreUtils.pm
+x List-MoreUtils-0.428/lib/List/MoreUtils/Contributing.pod
+x List-MoreUtils-0.428/lib/List/MoreUtils/PP.pm
+x List-MoreUtils-0.428/inc/Config/
+x List-MoreUtils-0.428/inc/inc_Capture-Tiny/
+x List-MoreUtils-0.428/inc/inc_Config-AutoConf/
+x List-MoreUtils-0.428/inc/latest/
+x List-MoreUtils-0.428/inc/latest.pm
+x List-MoreUtils-0.428/inc/latest/private.pm
+x List-MoreUtils-0.428/inc/inc_Config-AutoConf/Config/
+x List-MoreUtils-0.428/inc/inc_Config-AutoConf/Config/AutoConf.pm
+x List-MoreUtils-0.428/inc/inc_Capture-Tiny/Capture/
+x List-MoreUtils-0.428/inc/inc_Capture-Tiny/Capture/Tiny.pm
+x List-MoreUtils-0.428/inc/Config/AutoConf/
+x List-MoreUtils-0.428/inc/Config/AutoConf/LMU.pm
+Entering List-MoreUtils-0.428
+Checking configure dependencies from META.json
+Checking if you have ExtUtils::MakeMaker 6.58 ... Yes (6.66)
+Running Makefile.PL
+Configuring List-MoreUtils-0.428 ... Checking whether pureperl is required... no
+Checking for cc... ld: warning: The i386 architecture is deprecated for macOS (remove from Xcode build setting: ARCHS)
+ld: warning: ignoring file /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/lib/libSystem.tbd, missing required architecture i386 in file /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/lib/libSystem.tbd
+clang
+Checking for cc... (cached) clang
+Checking whether perlapi is accessible... ***
+    This version of List::MoreUtils conflicts with the version of
+    List::MoreUtils v0.33 at /System/Library/Perl/Extras/5.18/darwin-thread-multi-2level/List/MoreUtils.pm you have installed.
+
+    It's strongly recommended that you carefully read
+    the Changes file and test your application with
+    this version before finally upgrading.
+
+    The installed files will be removed when installing.
+***
+yes
+Checking if your kit is complete...
+Looks good
+Writing Makefile for List::MoreUtils
+Writing MYMETA.yml and MYMETA.json
+Checking dependencies from MYMETA.json ...
+Checking if you have List::MoreUtils::XS 0.426 ... Yes (0.428)
+Checking if you have ExtUtils::MakeMaker 0 ... Yes (6.66)
+Checking if you have Exporter::Tiny 0.038 ... Yes (1.002001)
+OK
+Building List-MoreUtils-0.428 ... cp lib/List/MoreUtils/Contributing.pod blib/lib/List/MoreUtils/Contributing.pod
+cp lib/List/MoreUtils.pm blib/lib/List/MoreUtils.pm
+cp lib/List/MoreUtils/PP.pm blib/lib/List/MoreUtils/PP.pm
+Appending installation info to /private/tmp/makefail-20180906-25247-4rfpkj/tryme/tryit/lib/perl5/darwin-thread-multi-2level/perllocal.pod
+OK
+Successfully installed List-MoreUtils-0.428
+Installing /private/tmp/makefail-20180906-25247-4rfpkj/tryme/tryit/lib/perl5/darwin-thread-multi-2level/.meta/List-MoreUtils-0.428/MYMETA.json
+Installing /private/tmp/makefail-20180906-25247-4rfpkj/tryme/tryit/lib/perl5/darwin-thread-multi-2level/.meta/List-MoreUtils-0.428/install.json
+! Installing the dependencies failed: Module 'List::MoreUtils' is not installed
+! Bailing out the installation for ..
+1 distribution installed
+
+HOMEBREW_VERSION: 1.7.3
+ORIGIN: https://github.com/Homebrew/brew
+HEAD: 61ace27006a1cb444552c0be10087fcbc3051643
+Last commit: 3 days ago
+Core tap ORIGIN: https://github.com/Homebrew/homebrew-core
+Core tap HEAD: f6e820d7dac23c14aed1be2067986c081f41b83a
+Core tap last commit: 2 hours ago
+HOMEBREW_PREFIX: /usr/local
+HOMEBREW_CACHE: /Users/david/Library/Caches/Homebrew
+CPU: quad-core 64-bit broadwell
+Homebrew Ruby: 2.3.7 => /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby
+Clang: 10.0 build 1000
+Git: 2.17.1 => /usr/local/bin/git
+Curl: 7.54.0 => /usr/bin/curl
+Java: N/A
+macOS: 10.13.6-x86_64
+CLT: 10.0.0.0.1.1527767617
+CLT headers: N/A
+Xcode: N/A
+XQuartz: N/A
+
+HOMEBREW_CC: clang
+HOMEBREW_CXX: clang++
+MAKEFLAGS: -j4
+CMAKE_PREFIX_PATH: /usr/local
+CMAKE_INCLUDE_PATH: /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2:/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/OpenGL.framework/Versions/Current/Headers
+CMAKE_LIBRARY_PATH: /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/OpenGL.framework/Versions/Current/Libraries
+PKG_CONFIG_LIBDIR: /usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/10.13
+HOMEBREW_GIT: git
+HOMEBREW_SDKROOT: /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk
+PATH: /usr/local/Homebrew/Library/Homebrew/shims/mac/super:/usr/local/opt/cpanminus/bin:/usr/bin:/bin:/usr/sbin:/sbin
