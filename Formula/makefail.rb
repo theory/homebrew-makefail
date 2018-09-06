@@ -28,7 +28,7 @@ class Makefail < Formula
       # Enable echoing commands and ExtUtils::Install verbosity.
       system *%W[cpanm --verbose --notest --local-lib-contained tryit --install-args], 'NOECHO="" VERBINST=1', "List::MoreUtils"
     else
-      # No debugging, build will fail becuause List::MoreUtils will not be installed.
+      # No debugging. Unless --with-fix build will fail because List::MoreUtils will not be installed.
       system *%W[cpanm --verbose --notest --local-lib-contained tryit --installdeps .];
     end
   end
