@@ -17,8 +17,9 @@ class Makefail < Formula
 
     if build.with? "fix"
       ENV["MAKEFLAGS"] = ""
-      system *%W[cpanm --verbose --notest --local-lib-contained tryit List::MoreUtils]
-    elsif build.with? "install-debug"
+    end
+
+    if build.with? "install-debug"
       # Enable debugging output for `make install`. Build will appear successful
       # (if empty), but log will have have full debugging output.
       system *%W[cpanm --verbose --notest --local-lib-contained tryit --install-args -d List::MoreUtils]
