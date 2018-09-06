@@ -8,6 +8,6 @@ class Makefail < Formula
 
   def install
     system *%W[cpanm --quiet --notest --local-lib-contained tryit List::MoreUtils::XS Exporter::Tiny];
-    system *%W[cpanm --verbose --notest --local-lib-contained tryit --install-args -d --build-args -d --install-args -d --installdeps .];
+    system *%W[cpanm --verbose --notest --local-lib-contained tryit --install-args -d List::MoreUtils];
   end
 end
