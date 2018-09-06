@@ -7,6 +7,7 @@ class Makefail < Formula
   bottle :unneeded
 
   option 'with-install-debug', "Turns on debug output for `make install`"
+  option 'with-install-verbose', "Turns on verbose output for `make install`"
 
   def install
     # Install dependencies.
@@ -20,6 +21,8 @@ class Makefail < Formula
       # Enable debugging output for `make install`. Build will appear successful
       # (if empty), but log will have have full debugging output.
       system *%W[cpanm --verbose --notest --local-lib-contained tryit --install-args -d List::MoreUtils]
+    elsif build.with? "install-verbose"
+      system *%W[cpanm --verbose --notest --local-lib-contained tryit --install-args %q{NOECHO="" VERBINST=1} List::MoreUtils]
     else
       # No debugging, build will fail becuause List::MoreUtils will not be installed.
       system *%W[cpanm --verbose --notest --local-lib-contained tryit --installdeps .];
