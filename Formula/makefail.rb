@@ -16,7 +16,8 @@ class Makefail < Formula
     system *%W[cpanm --quiet --notest --local-lib-contained tryit List::MoreUtils::XS Exporter::Tiny]
 
     if build.with? "fix"
-      system *%W[cpanm --verbose --notest --local-lib-contained tryit --install-args MAKEFLAGS= List::MoreUtils]
+      ENV["MAKEFLAGS"] = ""
+      system *%W[cpanm --verbose --notest --local-lib-contained tryit List::MoreUtils]
     elsif build.with? "install-debug"
       # Enable debugging output for `make install`. Build will appear successful
       # (if empty), but log will have have full debugging output.
