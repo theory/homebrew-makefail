@@ -1,3 +1,4 @@
+require 'pp'
 class Makefail < Formula
   desc "Testing case for Homebrew `make` bug"
   version "1"
@@ -18,6 +19,7 @@ class Makefail < Formula
       # (if empty), but log will have have full debugging output.
       system *%W[cpanm --verbose --notest --local-lib-contained tryit --install-args -d List::MoreUtils]
     elsif build.with? "install-verbose"
+      pp ENV
       # Enable echoing commands and ExtUtils::Install verbosity.
       system *%W[cpanm --verbose --notest --local-lib-contained tryit --install-args], 'NOECHO="" VERBINST=1', "List::MoreUtils"
     else
