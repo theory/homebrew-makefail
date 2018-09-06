@@ -12,6 +12,10 @@ class Makefail < Formula
     # Install dependencies.
     system *%W[cpanm --quiet --notest --local-lib-contained tryit List::MoreUtils::XS Exporter::Tiny]
 
+    # Enable Perl make debugging.
+    ENV["NOECHO"] = ""
+    ENV["VERBINST"] = "1"
+
     if build.with? "install-debug"
       # Enable debugging output for `make install`. Build will appear successful
       # (if empty), but log will have have full debugging output.
