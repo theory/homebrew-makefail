@@ -6,8 +6,19 @@ class Makefail < Formula
   depends_on 'cpanminus' => :build
   bottle :unneeded
 
+  option 'with-install-debug', "Turns on debug output for `make install`"
+
   def install
-    system *%W[cpanm --quiet --notest --local-lib-contained tryit List::MoreUtils::XS Exporter::Tiny];
-    system *%W[cpanm --verbose --notest --local-lib-contained tryit --install-args -d List::MoreUtils];
+    # Install dependencies.
+    system *%W[cpanm --quiet --notest --local-lib-contained tryit List::MoreUtils::XS Exporter::Tiny]
+
+    if build.with? "install-debug"
+      # Enable debugging output for `make install`. Build will appear successful
+      # (if empty), but log will have have full debugging output.
+      system *%W[cpanm --verbose --notest --local-lib-contained tryit --install-args -d List::MoreUtils]
+    else
+      # No debugging, build will fail becuause List::MoreUtils will not be installed.
+      system *%W[cpanm --verbose --notest --local-lib-contained tryit --installdeps .];
+    end
   end
 end
